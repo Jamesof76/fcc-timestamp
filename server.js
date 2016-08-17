@@ -33,7 +33,7 @@ app.get('/:date', function(req, res){
     res.send(typeof myVar);
 });
 
-var myPort = Number(process.env.port || 8080);
+var myPort = Number(process.env.PORT || 8080);
 app.listen(myPort, function(){
   console.log("Listening on port 8080...");
 });
