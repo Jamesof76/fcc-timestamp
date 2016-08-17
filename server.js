@@ -33,6 +33,7 @@ app.get('/:date', function(req, res){
     res.send(typeof myVar);
 });
 
-app.listen(8080, function(){
+var myPort = (process.env.port || 8080);
+app.listen(myPort, function(){
   console.log("Listening on port 8080...");
 });
